@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1009204268890",
+    "project_id": "music-streaming-39afd",
+    "storage_bucket": "music-streaming-39afd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009204268890:android:77924aad31c55dc811ad63",
+        "android_client_info": {
+          "package_name": "com.v1nic1us.music_streaming_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8ci0Une3px-citkmtVDXUU0cdBwFFjkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
