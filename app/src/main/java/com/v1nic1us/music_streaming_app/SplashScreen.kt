@@ -22,7 +22,7 @@ class SplashScreen : AppCompatActivity() {
 
         }
         supportActionBar?.hide()
-        redirectUser();
+        redirectUser()
     }
     private fun redirectUser(){
         lifecycleScope.launch {

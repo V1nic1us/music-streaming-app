@@ -28,24 +28,9 @@ class LoginScreen : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         auth = Firebase.auth
-
-        binding?.btLogin?.setOnClickListener{
-            var email: String = binding?.etEmail?.text.toString()
-            var password: String = binding?.etPassword?.text.toString()
-
-            if(email.isNotEmpty() && password.isNotEmpty()){
-                signInWithEmailAndPassword(email, password)
-            }else {
-                Toast.makeText(this@LoginScreen, "Por favor preencha os campos.", Toast.LENGTH_SHORT).show()
-            }
-        }
-
-        binding?.llSignUp?.setOnClickListener{
-            var intent = Intent(this@LoginScreen, RegisterScreen::class.java)
-            startActivity(intent)
-        }
+        btnLogin()
+        btnCreateAccount()
     }
 
     private fun signInWithEmailAndPassword(email: String, password: String){
@@ -59,6 +44,26 @@ class LoginScreen : AppCompatActivity() {
                 Log.w(TAG, "signInUserWithEmailAndPassword:Failure", task.exception)
                 Toast.makeText(baseContext, "Email ou senha incorreto!", Toast.LENGTH_SHORT).show()
             }
+        }
+    }
+
+    private fun btnLogin(){
+        binding?.btLogin?.setOnClickListener{
+            var email: String = binding?.etEmail?.text.toString()
+            var password: String = binding?.etPassword?.text.toString()
+
+            if(email.isNotEmpty() && password.isNotEmpty()){
+                signInWithEmailAndPassword(email, password)
+            }else {
+                Toast.makeText(this@LoginScreen, "Por favor preencha os campos.", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun btnCreateAccount(){
+        binding?.llSignUp?.setOnClickListener{
+            var intent = Intent(this@LoginScreen, RegisterScreen::class.java)
+            startActivity(intent)
         }
     }
 

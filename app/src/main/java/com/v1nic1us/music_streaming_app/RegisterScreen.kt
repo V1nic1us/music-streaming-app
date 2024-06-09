@@ -30,6 +30,10 @@ class RegisterScreen : AppCompatActivity() {
 
         auth = Firebase.auth
 
+        btnCreatedAccount()
+    }
+
+    private fun btnCreatedAccount(){
         binding?.btRegister?.setOnClickListener{
             var email: String = binding?.etEmail?.text.toString()
             var password: String = binding?.etPassword?.text.toString()
