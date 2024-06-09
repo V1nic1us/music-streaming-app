@@ -22,9 +22,12 @@ class SplashScreen : AppCompatActivity() {
 
         }
         supportActionBar?.hide()
+        redirectUser();
+    }
+    private fun redirectUser(){
         lifecycleScope.launch {
             delay(3000)
-            val intent = Intent(this@SplashScreen, MainActivity::class.java)
+            val intent = Intent(this@SplashScreen, LoginScreen::class.java)
             startActivity(intent)
             finish()
         }
