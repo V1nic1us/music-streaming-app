@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">music-streaming-app</string>
+    <string name="titleLoginScreen">Welcome to Firebase Authentication Tutorial!</string>
+    <string name="inputEmail">Enter your email</string>
+    <string name="inputPassword">Enter your password</string>
+    <string name="inputConfirmPassword">Confirm your password</string>
+    <string name="buttonSignIn">SIGN IN</string>
+    <string name="labelNotAccount">Don\'t have an account?</string>
+    <string name="labelSignUp">Sign Up</string>
+    <string name="buttonRegister">REGISTER</string>
 </resources>
