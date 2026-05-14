@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">music-streaming-app</string>
+    <string name="titleLoginScreen">Music Streaming!</string>
+    <string name="inputEmail">Email</string>
+    <string name="inputPassword">Senha</string>
+    <string name="inputConfirmPassword">Confirme senha</string>
+    <string name="buttonSignIn">Entrar</string>
+    <string name="labelNotAccount">Não tem conta?</string>
+    <string name="labelSignUp">Criar conta</string>
+    <string name="buttonRegister">Criar conta</string>
 </resources>
